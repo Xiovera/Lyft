@@ -1,0 +1,75 @@
+*{
+	/*outline: 1px solid red;*/
+	font-family: Merriweather;
+}
+/*header*/
+header .navbar{
+	background-color: #FE2E2E;
+}
+header a{
+	color: #fff;
+}
+/*hero-section*/
+.hero-section .fondo-oscuro{
+	background-color: rgba(32, 23, 3, 0.72);
+}
+.hero-section{
+	background:url(../img/creamy.jpg) no-repeat center center;
+	background-size: cover;	
+}
+.hero-section .container-fluid{
+	padding-bottom: 160px;
+	padding-top: 160px;
+	
+}
+.hero-section h1{
+	color: #F5DA81;
+}
+.hero-section small{
+	color: #F5DA81;
+}
+/*so-beauty-section*/
+.so-beauty-section{
+	background-color: #F5DA81;
+}
+.so-beauty-section p, h3 {
+	color: #FE2E2E;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.so-beauty-section img{
+	padding: 30px;
+}
+/*about-section*/
+.about-section{
+	background-color: #FE2E2E;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.about-section h4,p{
+	color: #F5DA81;
+	margin-bottom: 20px;
+}
+/*icon-section*/
+.icon-section{
+	background-color: #F5DA81;
+	padding-bottom: 50px;
+	padding-top: 50px;	
+}
+.icon-section .row-icon{
+	margin-top: 25px;
+}
+.icon-section span{
+	font-size: 50px;
+	padding: 60px;
+}
+.icon-section span,h5,small{
+	color: #FE2E2E;
+	padding-bottom: 10px;
+}
+/* footer*/
+footer{
+	background-color: #FE2E2E;
+	color: #F5DA81;
+	padding-top: 15px;
+}
