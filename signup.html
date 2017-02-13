@@ -13,33 +13,40 @@
 
 	<!--Css-->
   	<link rel="stylesheet" href="css/animate.css" type="text/css">  	
-  	<link rel="stylesheet" href="css/queries.css" type="text/css">
-  	 <link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
 
   	<!--Fonts-->
   	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> 
 </head>
-<body>
-
+<body onload="init()">
 <header>
 <div class="container">
-	<div class="row text-center">
-		<h1>Sign Up</h1>
-		<h6>Join now for free ride credit</h6>
-		<br>
-		<div class=" col-xs-10 col-xs-offset-1 input-group">
-		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://www.limaeasy.com/images/categories/peru-info/state_flag.jpg" alt="peru" class="img-responsive"><span class="caret"></span></button>
-		  <ul class="dropdown-menu">
-		    <li><img src="http://www.limaeasy.com/images/categories/peru-info/state_flag.jpg" alt=""></li>
-		  </ul>
-		  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+	<div class="row">
+		<div class="flechita hidden-lg hidden-md hidden-sm col-xs-2">
+			<a href="index.html"><button class="btn btn-group-lg"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button></a>
 		</div>
-		<h6>We'll send a text to verify your phone.</h6>
+		<div class="hidden-lg hidden-md hidden-sm col-xs-10">
+			<h1 class="text-center">Sign Up</h1>
+			<h6 class="text-center">Join now for free ride credit</h6>
+		</div>
 	</div>
-</div>
-	
+</div>	
 </header>
+<br>
+<section class="dropdown-country">
+	<div class="container">
+		<div class="row">
+			<p class="text-center">
+				<a href="">País</a>
+				<input type="text" placeholder="+51 97987987675">
+			</p>
+		</div>
+	</div>	
+</section>
+	<h6 class="text-center">We'll send a text to verify your phone.</h6>
+</div>	
 
-	
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
+

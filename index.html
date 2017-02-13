@@ -19,7 +19,7 @@
   	<!--Fonts-->
   	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> 
 </head>
-<body>
+<body onload="init()">
 <div class="fondo">
 <header>
 	<div class="container">
@@ -32,15 +32,18 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="hidden-lg hidden-sm col-xs-6">
-				<button type="button" class="btn btn-lg center-block btn-default">Log in</button>		
+			<div class="hidden-lg hidden-md hidden-sm col-xs-6">
+				<a href="login.html" class="btn btn-lg center-block btn-default">Log in</a>		
 			</div>
 			<div class="hidden-lg hidden-sm col-xs-6">
-				<button type="button" class="btn btn-lg btn-default center-block">Sign up</button>			
+				<a href="signup.html" class="btn btn-lg center-block btn-default">Sign up</a>			
 			</div>
 		</div>
 	</div>
 </footer>
 </div>	
+
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
+

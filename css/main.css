@@ -6,7 +6,11 @@
 	background-size: cover;	
 	height: 732px;
 }
-button{
+a{
 	margin-top: 590px;
+}
+/*-----------Sign up----------*/
+.flechita{
+	margin-top: 35px;
 }
 
