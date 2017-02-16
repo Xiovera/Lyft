@@ -1,6 +1,6 @@
-*{
+/**{
 	outline:1px solid red;
-}
+}*/
 
 .flechita{
 	margin-top: 35px;
@@ -54,4 +54,17 @@
 
 .borde-rojo{
 	border: 1px solid red;
+}
+.siguiente{
+	width: 100%;
+	position: absolute;
+	left: 0px;
+    bottom: 0px;
+    background: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+}
+p{
+	margin: 0 0 200px!important;
 }

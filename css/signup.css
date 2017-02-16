@@ -1,7 +1,6 @@
-*{
+/**{
 	outline: 1px solid red;
-}
-
+}*/
 header{
 	padding: 10px;
 	border-bottom: 1px gainsboro solid;
