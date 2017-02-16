@@ -1,6 +1,9 @@
 *{
 	outline: 1px solid red;
 }
+.flechita{
+	margin-top: 35px;
+}
 .fondo{
 	background:url(../img/fondok.png) no-repeat center center;
 	background-size: cover;	
@@ -9,7 +12,4 @@
 a{
 	margin-top: 590px;
 }
-/*-----------Sign up----------*/
-.flechita{
-	margin-top: 35px;
-}
+
