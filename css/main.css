@@ -11,5 +11,9 @@
 }
 a{
 	margin-top: 590px;
+	color: white;
+}
+a.lila{
+	background: rebeccapurple;
 }
 

@@ -17,23 +17,20 @@
   	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> 
 </head>
 <body onload="init()">
-<div class="fondo">
 <header>
 	<div class="container">
 	<div class="row">
-		<div class="hidden-lg hidden-sm col-xs-8 col-xs-offset-2">		
+		<div class="hidden-lg hidden-md hidden-sm col-xs-1">
+			<a href="datos.html"><button class="btn btn-group-lg"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button></a>	
+		</div>
+		<div class="hidden-lg hidden-md hidden-sm col-xs-11">
+			<div class="row">
+			<div id="map" style="height:732px;"></div>
+		</div>
 		</div>
 	</div>
 	</div>
 </header>
-<footer>
-	<div class="container">
-		<div class="row">
-			<div id="map" style="height:732px;"></div>
-		</div>
-	</div>
-</footer>
-</div>	
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApThsU0OJzdzVJarfM8pR6TjjtayTwqsE&callback=initMap"async defer></script>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
