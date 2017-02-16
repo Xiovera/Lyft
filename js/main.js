@@ -35,16 +35,6 @@ var registrarCodigo= function(){
 	}
 }
 
-var focusI= function(e){
-	var codigo = e.keyCode;
-	if(codigo >= 48 && codigo <= 57){
-		return true;
-	}else if(codigo == 8){
-		return true;
-	}else{
-		return false;
-	}
-}
 
 var validar= function(e){
 	if(validar().length== 0){
@@ -55,18 +45,16 @@ var validar= function(e){
 }
 
 var registrar= function(){
-	nombre= localStorage.setItem("nombre".value);
-	apellido= localStorage.setItem("apellido".value);
-	correo= localStorage.setItem("correo".value);
+	nombre= localStorage.setItem("nombre",value);
+	apellido= localStorage.setItem("apellido",value);
+	correo= localStorage.setItem("correo",value);
 
-	if((nombre && email && .is(":checked")){
-	}
 
 }
 
 var nombres= function(){
 	var letra = /^[a-zA-Z]+$/;
-	if((nombre.length && apellidos.length >= 2 {
+	if{(nombre.length && apellidos.length)>=2 
 		return true;
 	}else{
 		return false;		
@@ -75,7 +63,7 @@ var nombres= function(){
 
 var email= function(){
 	var regex= /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
-	if(email {
+	if{email==null;
 		return true;
 	}else{
 		return false;
