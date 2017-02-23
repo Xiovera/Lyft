@@ -1,11 +1,11 @@
-function init () {
-	
 
+$(document).ready(cargarPagina);
 var codigoAleartorio = localStorage.getItem("codigo");
 var numero= localStorage.getItem("numeroTelefono");
 var nombre= localStorage.getItem("nombre");
 var apellido= localStorage.getItem("apellido");
 var correo= localStorage.getItem("correo");
+var inicio= localStorage.getItem("fecha");
 var mapa;
 
 var validarNumeros= function(e){
@@ -17,63 +17,43 @@ var validarNumeros= function(e){
 	}
 }
 
+var validarLongitud= function(){
+	var longitud = $(this).val().length;
+	if (longitud == 9) {
+		$("#siguiente").attr("href", "codigo.html");
+	} else {
+		$("#siguiente").removeAttr("href");
+	}
+}
 var generarCodigo= function(){
 	if (codigoAleartorio !== null) {
 		localStorage.removeItem("codigo");
 	}
-	
+	if ($("#telefono").val().length == 9){
+		numero= $("#telefono").val();
+		codigoAleartorio= Math.floor(Math.random()*900)+100;
+		localStorage.setItem("codigo", codigoAleartorio);
+		alert("Your code is: LAB-"+ codigoAleartorio);
+		localStorage.setItem("numeroTelefono", numero);
+	}
 }
 
 var registrarCodigo= function(){
+	var codigoConfirmacion= $("#codigo1").val() + $("#codigo2").val() + $("#codigo3").val();
 	if (codigoAleartorio !== null) {
 		if(codigoAleartorio == codigoConfirmacion){
+			$("#registrarCodigo").attr("href", "datos.html");
 		}else{
 			alert("Invalid code");
+			$(".codigo").last().focus();
 		}
 	} else {
 		alert("Generate your code");
 	}
 }
-
 var generarNuevoCodigo= function(){
 	codigoAleartorio= Math.floor(Math.random()*900)+100;
 	localStorage.setItem("codigo", codigoAleartorio);
 	alert("Your code is: LAB-"+ codigoAleartorio);
 }
-
-
-var validar= function(e){
-	if(validar().length== 0){
-		return true;
-	}else{
-		return false;
-	}
-}
-
-var registrar= function(){
-	nombre= localStorage.setItem("nombre",value);
-	apellido= localStorage.setItem("apellido",value);
-	correo= localStorage.setItem("correo",value);
-
-
-}
-
-var nombres= function(){
-	var letra = /^[a-zA-Z]+$/;
-	if{
-		return true;
-	}else{
-		return false;		
-	}
-}
-
-var email= function(){
-	var regex= /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
-	if{email==null;
-		return true;
-	}else{
-		return false;
-	}
-}
-
-}
+	
