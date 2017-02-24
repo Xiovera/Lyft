@@ -17,14 +17,6 @@ var validarNumeros= function(e){
 	}
 }
 
-var validarLongitud= function(){
-	var longitud = $(this).val().length;
-	if (longitud == 9) {
-		$("#siguiente").attr("href", "codigo.html");
-	} else {
-		$("#siguiente").removeAttr("href");
-	}
-}
 var generarCodigo= function(){
 	if (codigoAleartorio !== null) {
 		localStorage.removeItem("codigo");
@@ -56,4 +48,71 @@ var generarNuevoCodigo= function(){
 	localStorage.setItem("codigo", codigoAleartorio);
 	alert("Your code is: LAB-"+ codigoAleartorio);
 }
-	
+
+var cargarPagina= function(){
+	$("#telefono").keydown(validarNumeros);
+	$("#telefono").keyup(validarLongitud);
+	$("#siguiente").click(generarCodigo);
+	$("#registrarCodigo").click(registrarCodigo);
+	$(".codigo-r").keyup(focusI);
+	$(".codigo-r").keypress(validar);
+	$(".codigo-r").keydown(validarNumeros);
+	$(".codigo-r").first().focus();
+	$("#numero").text(numero);
+	$("#registro").click(registrar);
+	$("#nombres").keyup(mayuscula);
+	$("#apellidos").keyup(mayuscula);
+	$("#icono, .menu").click(menu);
+	if(location.href.includes("mapa.html")){
+		if (navigator.geolocation) { 
+			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
+		}
+	}
+}
+
+
+var validar= function(e){
+	if($(this).val().length== 0){
+		return true;
+	}else{
+		return false;
+	}
+
+
+var registrar= function(){
+	nombre= localStorage.setItem("nombre", $("#nombres").val());
+	apellido= localStorage.setItem("apellido", $("#apellidos").val());
+	correo= localStorage.setItem("correo", $("#correo").val());
+
+	if((nombres() && email()) && $("#check").is(":checked")){
+		$("#registro").attr("href", "mapa.html");
+	}
+
+}
+
+var nombres= function(){
+	var letra = /^[a-zA-Z]+$/;
+	if(($("#nombres, #apellidos").val().length >= 2 && $("#nombres, #apellidos").val().length <= 20) && letra.test($("#nombres, #apellidos").val().trim())){
+		return true;
+	}else{
+		return false;		
+	}
+}
+
+var email= function(){
+	var regex= /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+	if(regex.test($("#correo").val().trim())){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+var menu= function(){
+	$("#menu").animate({width:'toggle'},350);
+	$(".absolute").show();
+	$("#mapa").addClass("peque");
+}
+
+}
+

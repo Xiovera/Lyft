@@ -54,8 +54,6 @@ var registrar= function(){
 	nombre= localStorage.setItem("nombre",value);
 	apellido= localStorage.setItem("apellido",value);
 	correo= localStorage.setItem("correo",value);
-
-
 }
 
 var nombres= function(){
