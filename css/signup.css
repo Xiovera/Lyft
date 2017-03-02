@@ -83,7 +83,7 @@ header{
 	width: 100%;
 	position: absolute;
 	left: 0px;
-    bottom: 0px;
+    bottom: -80px;
     background: rebeccapurple;
     color: white;
     font-weight: bold;

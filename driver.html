@@ -12,16 +12,22 @@
   	<script src="js/bootstrap.min.js"></script>
 	<!--Css-->
   	<link rel="stylesheet" href="css/animate.css" type="text/css">  	
-	<link rel="stylesheet" href="css/signup.css" type="text/css">
+	<link rel="stylesheet" href="css/driver.css" type="text/css">
   	<!--Fonts-->
   	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> 
 </head>
-<body onload="init()">
+<body>
 <header>
 <div class="container">
 	<div class="row">
-		<div class="flechita hidden-lg hidden-md hidden-sm col-xs-2">
-			<a href="map.html"><button class="btn btn-group-lg"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button></a>
+		<div class="col-xs-1 menu">
+			<span class="glyphicon glyphicon-option-vertical" aria-hidden="true">
+		</div>
+
+		<div class="col-xs-2 logo"><img src="img/purplelyft.png" alt="logo" class="img-responsive"></div>
+
+		<div class="col-xs-9">
+			<h3 class="text-center">Payment</h3>
 		</div>
 		
 	</div>
@@ -30,35 +36,63 @@
 <br>
 	
 
-
 <div class="container-fluid">
 	<img src="img/driver.jpg" alt="driver123" class="center-block img-circle img-responsive img-rounded">
 
 	<br>
-	
-	<form action="" class="form-inline">
-		<div class="row">
-			<div class="col-xs-3"></div>
-			<div class="col-xs-3"></div>
-			<div class="col-xs-3"></div>
-			<div class="col-xs-3"></div>
-		</div>
-	</form>
+
+	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	  <div class="btn-group" role="group">
+	    <button type="button" class="btn btn-default">No tip</button>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <button type="button" class="btn btn-default">$1</button>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <button type="button" class="btn btn-default">$2</button>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <button type="button" class="btn btn-default">$5</button>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <button type="button" class="btn btn-default">Other</button>
+	  </div>
+
+	</div>
+
+	<br>
 
 	<form class="form-inline">
 	  <div class="form-group">
-	    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+	    <label class="sr-only" for="exampleInputAmount" placeholder=""> </label>
 	    <div class="input-group">
-	      <div class="input-group-addon">$</div>
-	      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-	      <div class="input-group-addon">.00</div>
+	      <input type="text" class="form-control" id="exampleInputAmount" class="glyphicon glyphicon-credit-card"  placeholder="Payment                                                               *1234" >
+	      <div class="input-group-addon"> <span class="glyphicon glyphicon-menu-right"></span></div>
 	    </div>
 	  </div>
-	  <button type="submit" class="btn btn-primary">Transfer cash</button>
 	</form> 
+
+	<div class="row text-center">
+		<div class="col-xs-6">
+			<h6><em> (costoKM)</em> :</h6>
+    		<input type="text" id="costoPorKM" class="form-control">
+		</div>
+		<div class="col-xs-6">
+			<h6><em> (cantidadKM)</em>: </h6>
+		    <input type="text" id="cantidadKM" class="form-control"> 			
+		</div>
+
+		<br>
+		<br>
+		    <button onclick="calcularCosto()">Costo</button>
+		    <div id="salida"></div>  
+	</div>
+
+
+	</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/my-jquery.js"></script>
+<script type="text/javascript" src="js/driver.js"></script>
 </body>
 </html>
