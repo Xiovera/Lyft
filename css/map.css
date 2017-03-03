@@ -1,0 +1,84 @@
+.container{
+	height: 100% ;
+}
+#map{
+	height: 100%;
+}
+
+#btn-select{
+	padding: 0;
+	border-radius: 10px;
+}
+#select{
+	position: relative;
+	transform: translateY(-100px);
+}
+.tipoCar{
+	margin-right:20%;
+	
+}
+
+.selector{
+	margin-top: 15px;
+	margin-left: 15px;
+	bottom: 200px;
+    padding: 3px;
+    border: 1px solid #605d5d;
+    border-radius: 15px;
+}
+.line{
+	margin-top: 10px;
+}
+.plus{
+	margin-right: 13px;
+	padding-left: 10px;
+	margin-top: 7px;
+}
+.myPhoto{
+    z-index:2;
+    position: absolute;
+    border-radius: 100%;
+    margin-left: 2%;
+    margin-top: 6%;
+    padding: 2px;
+    border: 1px solid #969696;
+}
+.iconoSorpre{
+    z-index:2;
+    position: absolute;
+    border-radius: 100%;
+    margin-left: 80%;
+    margin-top: 6%;
+    padding: 4px;
+    
+}
+.logo{
+    z-index:2;
+    position: absolute;
+    margin-left: 35%;
+    padding-top: 0;
+    padding: 4px;
+    background: #d6d4d4;
+    opacity: 0.4;
+    
+}
+
+.siguiente {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+    background: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.siguiente2 {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+    background: #ff00bf;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+}

@@ -1,5 +1,13 @@
-function init () {
-	
+function init (){
+
+    $.ajax({url:"https://clientes.geekadvice.pe/api/carrera",data:{tipo:3}}).success(function(_data){console.log(_data)}).fail(function(){alert("error")});
+
+    //$.ajax().success().fail(); general para ajax
+   //$.ajax("https://clientes.geekadvice.pe/api/carrera").fail(function(){alert("error")});
+
+    /*).success(function(_data){
+        console.log('_data.nombre');
+    });*/
 }
 //para definir lat y lng
 
