@@ -20,20 +20,63 @@
 <body onload="init()">
 <header>
 	<div class="container">
-	<div class="row">
-		<div class="hidden-lg hidden-md hidden-sm col-xs-1">
-			<a href="datos.html"><button class="btn btn-group-lg"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button></a>	
+		<div class="row">
+			<div class="hidden-lg hidden-md hidden-sm col-xs-12">
+				<div class="row">
+					<div id="map" style="height:732px;"></div>
+				</div>
+			</div>
 		</div>
-		<div class="hidden-lg hidden-md hidden-sm col-xs-11">
-			<div class="row">
-			<div id="map" style="height:732px;"></div>
-		</div>
-		</div>
-	</div>
 	</div>
 </header>
 <section>
-	
+
+<div class="container">	 	
+	<div class="dropup" id="select">
+	<div class="container">
+ 	   <span class="glyphicon glyphicon-arrow-left pull-left icons"></span> 
+ 	   <span class="glyphicon glyphicon-send pull-right icons"></span>
+ 	</div>
+		<div class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%" id="btn-select">
+            <div class="container top">
+               <div class="row">
+                   <div class="col-xs-5 col-sm-5 col-md-5 text-right">
+                       <img src="img/.png" style="width:45%"  alt="" class="selectCar">
+                   </div>
+                   <div class="col-xs-7 text-left">
+                       <h5>Lyft <small><br>Fast rides - 4 seats</small></h5>
+                   </div>
+               </div>
+            </div>
+		    <div class="container">
+		        <div class="row select-center">
+                    <div class="col-xs-6 text-center border-right ">
+                        <div class=" img-card">
+                            <img class="img-responsive mastercard" src="imagenes/640px-MasterCard_logo.png" alt="">
+                            <h5 class="mastercard-text">Personal
+                            <small><br>Payment</small></h5>    
+                        </div>
+                    </div>
+                    <div class="col-xs-6 text-center pad">
+                        <div class="">
+                            <h5>$6-12
+                            <small><br>Price estimate</small></h5>
+                        </div>
+                    </div>
+               </div>
+		        <div class="container">
+                    <div class="pull-left">
+						<span class="glyphicon glyphicon-stop lila"></span>2300 Harrison St
+                    </div>
+                    <br>
+                    <div class="pull-left">
+                         <span class="glyphicon glyphicon-stop pink"></span>Caltrain station
+                    </div>
+		        </div>
+		 	</div>
+       </div>
+    </div>
+</div>
 
 <a type="button" class="btn btn-default siguiente" href="driver.html">Request Lyft</a> 
 
