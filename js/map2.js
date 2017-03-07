@@ -15,10 +15,17 @@ function solicitarEstimado()
 	$.ajax({
 		url:"https://clientes.geekadvice.pe/api/estimado",
 		data:{tipo:1}
-	}).success(function(){
-		alert("ya funciona!");
-		});
+	}).success(function(_data){
+		console.log(_data);
+		update(_data);
+	});
+}
 
+function update(_info)
+{
+
+	alert(_info.destino);
+	alert(_info.estimado.min);
 
 }
 
