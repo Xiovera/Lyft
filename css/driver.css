@@ -8,3 +8,18 @@
 .logo{
 	margin-top: 17px;
 }
+
+.siguiente3{
+	width: 100%;
+	position: absolute;
+	left: 0px;
+    background: #474c62;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+    bottom: 5px;
+}
+
+button:hover {
+	background-color: #ff00bf;
+}
