@@ -83,11 +83,11 @@ header{
 	width: 100%;
 	position: absolute;
 	left: 0px;
+	bottom: 0px;
     background: rebeccapurple;
     color: white;
     font-weight: bold;
     padding: 20px 0;
-    bottom: 5px;
 }
 
 .form{
@@ -125,9 +125,18 @@ header{
 }
 .siguiente2{
 	width: 100%;
-	position: absolute;
 	left: 0px;
     background: #ff00bf;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+    bottom: 5px;
+}
+
+.siguiente4{
+	width: 100%;
+	left: 0px;
+    background: rebeccapurple;
     color: white;
     font-weight: bold;
     padding: 20px 0;

@@ -17,9 +17,9 @@
     color: white;
     font-weight: bold;
     padding: 20px 0;
-    bottom: 5px;
+    bottom: 5px !important;
 }
 
-button:hover {
-	background-color: #ff00bf;
+.alilado:hover {
+	background-color: #ff00bf !important;
 }

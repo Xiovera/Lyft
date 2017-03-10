@@ -37,24 +37,24 @@
 	
 
 <div class="container-fluid">
-	<img src="img/driver.jpg" alt="driver123" class="center-block img-circle img-responsive img-rounded">
+	<img src="img/driver.jpg" alt="driver123" class="center-block img-circle img-responsive img-rounded" id="image">
 
 	<br>
 
-	<div class="btn-group btn-group-justified alilado" role="group" aria-label="...">
-	  <div class="btn-group" role="group">
-	    <button type="button" class="btn btn-default">No tip</button>
+	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	  <div class="btn-group alilado" role="group">
+	    <button type="button" class="btn btn-default ">No tip</button>
 	  </div>
-	  <div class="btn-group" role="group">
+	  <div class="btn-group alilado" role="group">
 	    <button type="button" class="btn btn-default">$1</button>
 	  </div>
-	  <div class="btn-group" role="group">
+	  <div class="btn-group alilado" role="group">
 	    <button type="button" class="btn btn-default">$2</button>
 	  </div>
-	  <div class="btn-group" role="group">
+	  <div class="btn-group alilado" role="group">
 	    <button type="button" class="btn btn-default">$5</button>
 	  </div>
-	  <div class="btn-group" role="group">
+	  <div class="btn-group alilado" role="group">
 	    <button type="button" class="btn btn-default">Other</button>
 	  </div>
 
@@ -66,13 +66,18 @@
 	  <div class="form-group">
 	    <label class="sr-only" for="exampleInputAmount" placeholder=""> </label>
 	    <div class="input-group">
-	      <input type="text" class="form-control" id="exampleInputAmount" class="glyphicon glyphicon-credit-card"  placeholder="Payment                                                                   *1234" >
-	      <div class="input-group-addon"> <span class="glyphicon glyphicon-menu-right"></span></div>
+	    	<span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+	      	<input type="text" class="form-control" id="exampleInputAmount" class="glyphicon glyphicon-credit-card"  placeholder="Payment                                                                   *1234" >
+		    <div class="input-group-addon"> 
+		  		<span class="glyphicon glyphicon-menu-right"></span>
+		  	</div>
 	    </div>
 	  </div>
 	</form> 
 
-	<div class="text-center"><h1>$ 9.00</h1></div>
+	<div class="text-center">
+		<h2 id="price"> $ 9.00 </h2>
+	</div>
 
 
 	</div>

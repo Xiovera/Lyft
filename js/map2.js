@@ -1,6 +1,6 @@
-function init (){
-
-    $.ajax({url:"https://clientes.geekadvice.pe/api/carrera",data:{tipo:3}}).success(function(_data){console.log(_data)}).fail(function(){alert("error")});
+/*$.ajax({url:"https://clientes.geekadvice.pe/api/carrera",
+    	data:{tipo:3}}).success(function(_data){
+    		console.log(_data)}).fail(function(){alert("error")});
 
     //$.ajax().success().fail(); general para ajax
    //$.ajax("https://clientes.geekadvice.pe/api/carrera").fail(function(){alert("error")});
@@ -8,26 +8,7 @@ function init (){
     /*).success(function(_data){
         console.log('_data.nombre');
     });*/
-}
 
-function solicitarEstimado()
-{
-	$.ajax({
-		url:"https://clientes.geekadvice.pe/api/estimado",
-		data:{tipo:1}
-	}).success(function(_data){
-		console.log(_data);
-		update(_data);
-	});
-}
-
-function update(_info)
-{
-
-	alert(_info.destino);
-	alert(_info.estimado.min);
-
-}
 
 //para definir lat y lng
 
@@ -73,3 +54,4 @@ var cerca3 = new google.maps.Marker({
     icon: "img/car_30x40.jpg"
     });
 }
+
